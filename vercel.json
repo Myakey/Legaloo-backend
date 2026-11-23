@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "regions": ["sin1"],
+  "functions": {
+    "api/index.py": {
+      "memory": 1024,
+      "maxDuration": 60,
+      "excludeFiles": "{corpus,notebooks,tests,scripts,.venv,.git}/**"
+    }
+  }
+}
